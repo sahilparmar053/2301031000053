@@ -1,0 +1,106 @@
+<style>
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 1024px;
+    overflow: hidden;
+    align-items: start;
+    color: #010101;
+    letter-spacing: -0.79px;
+    padding: 39px 68px 64px;
+    font: 700 36px/54px Inter, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .faq-container {
+      padding: 0 20px;
+    }
+  }
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .faq-title {
+    position: relative;
+    font-size: 72px;
+    line-height: 108px;
+    letter-spacing: -1.58px;
+    margin-left: 10px;
+  }
+  @media (max-width: 991px) {
+    .faq-title {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 66px;
+    }
+  }
+  .faq-item {
+    position: relative;
+    margin-top: 90px;
+  }
+  @media (max-width: 991px) {
+    .faq-item {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .faq-question {
+    font-size: 48px;
+  }
+  .faq-answer {
+    font-weight: 400;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+
+<div class="faq-container">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/d0f957648014452cb9c7af63f9ffe8ca/4da7e1867ac8a2519006bf23df808f221dc0a8b97dc8ee278c3f282a9bb4dc8e?apiKey=d0f957648014452cb9c7af63f9ffe8ca&"
+    class="background-image"
+    alt=""
+  />
+  <h1 class="faq-title">
+    FAQs About the BE STRONG AI Life Coach
+  </h1>
+  <div class="faq-item">
+    <h2 class="faq-question">
+      What devices are compatible with the AI Life Coach?
+    </h2>
+    <p class="faq-answer">
+      It supports over 150 devices, including popular fitness trackers and
+      smartwatches.
+    </p>
+  </div>
+  <div class="faq-item">
+    <h2 class="faq-question">
+      Do I need to create an account to use the service?
+    </h2>
+    <p class="faq-answer">
+      No registration or login is required for free access.
+    </p>
+  </div>
+  <div class="faq-item">
+    <h2 class="faq-question">
+      Is the AI Life Coach suitable for beginners?
+    </h2>
+    <p class="faq-answer">
+      Yes, it provides simple, actionable tips and adapts to your level of
+      experience.
+    </p>
+  </div>
+</div>

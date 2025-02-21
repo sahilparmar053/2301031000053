@@ -1,0 +1,213 @@
+<style>
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 1024px;
+    overflow: hidden;
+    padding: 19px 25px 76px;
+  }
+  @media (max-width: 991px) {
+    .testimonials-container {
+      padding: 0 20px;
+    }
+  }
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .testimonials-title {
+    position: relative;
+    color: #010101;
+    letter-spacing: -1.06px;
+    text-align: right;
+    align-self: center;
+    font: 700 48px Inter, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .testimonials-title {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+  .testimonials-grid {
+    position: relative;
+    align-self: end;
+    margin-top: 190px;
+    width: 100%;
+    max-width: 1348px;
+  }
+  @media (max-width: 991px) {
+    .testimonials-grid {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .testimonials-row {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .testimonials-row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .testimonial-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .testimonial-column {
+      width: 100%;
+    }
+  }
+  .testimonial-text {
+    color: #010101;
+    letter-spacing: -0.7px;
+    text-align: center;
+    position: relative;
+    font: 400 32px/48px Inter, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .testimonial-text {
+      margin-top: 40px;
+    }
+  }
+  .testimonial-author-container {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    color: #010101;
+    text-align: center;
+    letter-spacing: -0.7px;
+    font: 32px/48px Inter, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .testimonial-author-container {
+      margin-top: 40px;
+    }
+  }
+  .testimonial-separator {
+    align-self: stretch;
+    margin-top: 27px;
+    height: 5px;
+    border: 4px solid rgba(255, 255, 255, 1);
+  }
+  .testimonial-author {
+    font-weight: 700;
+    margin-top: 7px;
+  }
+  .additional-testimonial {
+    position: relative;
+    color: #010101;
+    letter-spacing: -0.7px;
+    text-align: center;
+    align-self: start;
+    margin-top: 114px;
+    font: 400 32px/48px Inter, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .additional-testimonial {
+      margin-top: 40px;
+    }
+  }
+  .footer-container {
+    position: relative;
+    align-self: end;
+    display: flex;
+    margin-top: 37px;
+    width: 100%;
+    max-width: 1273px;
+    gap: 20px;
+    font-family: Inter, sans-serif;
+    color: #010101;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media (max-width: 991px) {
+    .footer-container {
+      max-width: 100%;
+    }
+  }
+  .footer-author {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.7px;
+    text-align: center;
+    width: 407px;
+  }
+  .footer-number {
+    text-align: right;
+    font-feature-settings: "liga" off, "clig" off;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.26px;
+    margin: auto 0;
+  }
+</style>
+
+<div class="testimonials-container">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/d0f957648014452cb9c7af63f9ffe8ca/4da7e1867ac8a2519006bf23df808f221dc0a8b97dc8ee278c3f282a9bb4dc8e?apiKey=d0f957648014452cb9c7af63f9ffe8ca&"
+    class="background-image"
+    alt=""
+  />
+  <h2 class="testimonials-title">
+    What Users Are Saying About the BE STRONG AI Life Coach
+  </h2>
+  <div class="testimonials-grid">
+    <div class="testimonials-row">
+      <div class="testimonial-column">
+        <p class="testimonial-text">
+          The personalized insights from the AI Life Coach have revolutionized
+          my daily routines and energy levels.
+        </p>
+      </div>
+      <div class="testimonial-column">
+        <p class="testimonial-text">
+          Finally, a tool that simplifies wellness! The real-time feedback has
+          been a game-changer for managing stress.
+        </p>
+      </div>
+      <div class="testimonial-column">
+        <div class="testimonial-author-container">
+          <p class="testimonial-text">
+            I love how it connects to my smartwatch and gives me clear steps to
+            improve my focus and sleep.
+          </p>
+          <div class="testimonial-separator"></div>
+          <p class="testimonial-author">
+            Emily Thompson
+            <br />
+            Freelancer
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="additional-testimonial">
+    The AI Life Coach feels like a personal guide, offering practical advice
+    without the guesswork.
+  </p>
+  <div class="footer-container">
+    <p class="footer-author">
+      Michael Davis
+      <br />
+      Entrepreneur
+    </p>
+    <span class="footer-number">3</span>
+  </div>
+</div>

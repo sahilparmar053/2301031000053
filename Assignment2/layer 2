@@ -1,0 +1,324 @@
+<style>
+  .signin-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 1024px;
+    overflow: hidden;
+    align-items: start;
+    padding: 32px 80px 93px;
+  }
+  @media (max-width: 991px) {
+    .signin-container {
+      padding: 0 20px;
+    }
+  }
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .header-content {
+    position: relative;
+    display: flex;
+    width: 910px;
+    max-width: 100%;
+    align-items: start;
+    gap: 20px;
+  }
+  .logo {
+    aspect-ratio: 1.16;
+    object-fit: contain;
+    object-position: center;
+    width: 129px;
+    margin-top: 15px;
+    max-width: 100%;
+  }
+  .vertical-line {
+    width: 2px;
+    height: 156px;
+    border: 1px solid #fff;
+  }
+  .title {
+    color: #010101;
+    letter-spacing: -1.6px;
+    text-align: center;
+    margin-top: 15px;
+    font: 400 32px/31px Inter, sans-serif;
+  }
+  .profile-icon-wrapper {
+    background-color: #d9d9d9;
+    align-self: end;
+    display: flex;
+    margin-top: 95px;
+    flex-direction: column;
+    padding: 0 5px;
+  }
+  @media (max-width: 991px) {
+    .profile-icon-wrapper {
+      margin-top: 40px;
+    }
+  }
+  .profile-icon {
+    aspect-ratio: 1.78;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+  }
+  .signin-heading {
+    color: #010101;
+    letter-spacing: -3.2px;
+    text-align: center;
+    align-self: end;
+    margin-top: 138px;
+    flex-grow: 1;
+    width: 208px;
+    font: 400 64px/1 Inter, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .signin-heading {
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  }
+  .email-container {
+    position: relative;
+    width: 541px;
+    max-width: 100%;
+    margin: 92px 0 0 201px;
+  }
+  @media (max-width: 991px) {
+    .email-container {
+      margin-top: 40px;
+    }
+  }
+  .email-row {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .email-row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .email-label-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 39%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .email-label-column {
+      width: 100%;
+    }
+  }
+  .email-label {
+    color: #010101;
+    letter-spacing: -3.2px;
+    text-align: center;
+    position: relative;
+    align-self: stretch;
+    margin: auto 0;
+    font: 400 64px/1 Inter, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .email-label {
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  }
+  .email-input-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 61%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .email-input-column {
+      width: 100%;
+    }
+  }
+  .email-input {
+    background-color: #d9d9d9;
+    position: relative;
+    display: flex;
+    width: 311px;
+    max-width: 100%;
+    height: 106px;
+    margin: 0 auto;
+  }
+  @media (max-width: 991px) {
+    .email-input {
+      margin-top: 32px;
+    }
+  }
+  .password-container {
+    position: relative;
+    width: 693px;
+    max-width: 100%;
+    margin: 67px 0 0 49px;
+  }
+  @media (max-width: 991px) {
+    .password-container {
+      margin-top: 40px;
+    }
+  }
+  .password-row {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .password-row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .password-label-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .password-label-column {
+      width: 100%;
+    }
+  }
+  .password-label {
+    color: #010101;
+    letter-spacing: -3.2px;
+    text-align: center;
+    position: relative;
+    font: 400 64px/1 Inter, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .password-label {
+      margin-top: 31px;
+      font-size: 40px;
+    }
+  }
+  .password-input-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .password-input-column {
+      width: 100%;
+    }
+  }
+  .password-input {
+    background-color: #d9d9d9;
+    position: relative;
+    display: flex;
+    width: 311px;
+    max-width: 100%;
+    height: 104px;
+    margin: 0 auto;
+  }
+  @media (max-width: 991px) {
+    .password-input {
+      margin-top: 31px;
+    }
+  }
+  .confirm-button {
+    position: relative;
+    border-radius: 30px;
+    background-color: #d9d9d9;
+    align-self: center;
+    margin-top: 185px;
+    width: 436px;
+    max-width: 100%;
+    color: #000;
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: -3.2px;
+    padding: 31px 70px;
+    font: 400 64px/1 Inter, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .confirm-button {
+      font-size: 40px;
+      margin-top: 40px;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+
+<div class="signin-container">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/4da7e1867ac8a2519006bf23df808f221dc0a8b97dc8ee278c3f282a9bb4dc8e?placeholderIfAbsent=true&apiKey=d0f957648014452cb9c7af63f9ffe8ca"
+    class="background-image"
+    alt=""
+  />
+  <div class="header-content">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/8f77cbab28efa14123c3dc12985d01dbe5a190a01cac32f55c1088a36be8cf47?placeholderIfAbsent=true&apiKey=d0f957648014452cb9c7af63f9ffe8ca"
+      class="logo"
+      alt="Fitness Coach Logo"
+    />
+    <div class="vertical-line"></div>
+    <h1 class="title">
+      MY PERSONAL
+      <br />
+      FITNESS COACH
+    </h1>
+    <div class="profile-icon-wrapper">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/0aaf3fdff1fa7085ff2cca7c624a9a577dd6e53b195755219c71db78c989b82b?placeholderIfAbsent=true&apiKey=d0f957648014452cb9c7af63f9ffe8ca"
+        class="profile-icon"
+        alt="Profile Icon"
+      />
+    </div>
+    <h2 class="signin-heading">SIGN IN</h2>
+  </div>
+  <form class="signin-form">
+    <div class="email-container">
+      <div class="email-row">
+        <div class="email-label-column">
+          <label for="email-input" class="email-label">EMAIL :</label>
+        </div>
+        <div class="email-input-column">
+          <input type="email" id="email-input" class="email-input" aria-label="Enter your email" required />
+        </div>
+      </div>
+    </div>
+    <div class="password-container">
+      <div class="password-row">
+        <div class="password-label-column">
+          <label for="password-input" class="password-label">PASSWORD :</label>
+        </div>
+        <div class="password-input-column">
+          <input type="password" id="password-input" class="password-input" aria-label="Enter your password" required />
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="confirm-button">CONFIRM</button>
+  </form>
+</div>
